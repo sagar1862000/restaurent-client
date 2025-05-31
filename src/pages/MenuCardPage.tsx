@@ -661,7 +661,7 @@ export default function MenuCardPage() {
               >
                 <img
                   src="/logo.png"
-                  alt="Skybar Cafe and Lounge"
+                  alt="Hotel Dastan"
                   className="h-full w-auto object-contain"
                   style={{ maxWidth: "none" }}
                 />
@@ -1487,7 +1487,7 @@ export default function MenuCardPage() {
               >
                 <img
                   src="/logo.png"
-                  alt="Skybar Cafe and Lounge"
+                  alt="Hotel Dastan"
                   className="h-full w-auto object-contain"
                   style={{ maxWidth: "none" }}
                 />
@@ -1569,7 +1569,7 @@ export default function MenuCardPage() {
                 {/* Social Icons - For visual appeal */}
                 <div className="flex items-center justify-start md:justify-end space-x-4">
                   <a
-                    href="https://www.facebook.com/people/SkyBar-CafeLounge/61574428375511/?ref=ig_profile_ac"
+                    href="https://www.facebook.com/profile.php?id=61560638404513&mibextid=JRoKGi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-8 h-8 rounded-full bg-[#0D3446] hover:bg-[#13465D] flex items-center justify-center cursor-pointer transition-colors"
@@ -1577,7 +1577,7 @@ export default function MenuCardPage() {
                     <Facebook className="h-4 w-4 text-[#00EAF0]" />
                   </a>
                   <a
-                    href="https://www.instagram.com/skybar_cafe_lounge/"
+                    href="https://www.instagram.com/hoteldastan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-8 h-8 rounded-full bg-[#0D3446] hover:bg-[#13465D] flex items-center justify-center cursor-pointer transition-colors"

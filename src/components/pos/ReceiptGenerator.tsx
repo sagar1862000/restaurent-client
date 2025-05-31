@@ -211,7 +211,7 @@ export function ReceiptGenerator({
         <body>
           <div class="receipt-container">
             <div class="receipt-header">
-              <h1>Skybar Cafe & Lounge</h1>
+              <h1>Hotel Dastan</h1>
               <p>DC Complex,4th Floor, Royal City, Chahal Road, Faridkot, Punjab</p>
               <p>Mobile- 9876543210</p>
               <p>GSTIN- 03ANPPC7864G1ZV</p>
@@ -291,7 +291,7 @@ export function ReceiptGenerator({
         <CardContent className="p-8 thermal-receipt" ref={receiptRef}>
           {/* Receipt Header */}
           <div className="text-center mb-4">
-            <h2 className="text-xl font-bold">Skybar Cafe & Lounge</h2>
+            <h2 className="text-xl font-bold">Hotel Dastan</h2>
             <p>DC Complex,4th Floor, Royal City, Chahal Road, Faridkot, Punjab</p>
             <p>Mobile- 9876543210</p>
             <p>GSTIN- 03ANPPC7864G1ZV</p>

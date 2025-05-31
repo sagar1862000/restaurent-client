@@ -155,7 +155,7 @@ export function Sidebar({ isExpanded, setIsExpanded }: SidebarProps) {
             className="flex items-center gap-2 overflow-hidden"
             layout
           >
-            <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
+            <div className="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center text-primary-foreground font-bold">
               <img src="/logo.png" alt="logo" className="h-full w-full" />
             </div>
             <AnimatePresence>
@@ -166,7 +166,7 @@ export function Sidebar({ isExpanded, setIsExpanded }: SidebarProps) {
                   exit={{ opacity: 0, width: 0 }}
                   className="font-bold overflow-hidden whitespace-nowrap"
                 >
-                  SkyBar Cafe & Lounge
+                  Hotel Dastan
                 </motion.div>
               )}
             </AnimatePresence>

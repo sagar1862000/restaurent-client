@@ -18,7 +18,7 @@ export default function LoginPage() {
           transition={{ duration: 0.5 }}
           className="mb-8 text-center"
         >
-          <h1 className="text-3xl font-bold">SkyBar Cafe & Lounge</h1>
+          <h1 className="text-3xl font-bold">Hotel Dastan</h1>
           <p className="text-muted-foreground mt-2">Sign in to continue your journey</p>
         </motion.div>
         

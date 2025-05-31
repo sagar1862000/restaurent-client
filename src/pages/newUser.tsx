@@ -26,7 +26,7 @@ export default function NewUserPage() {
 
           <div className="space-y-2">
             <h1 className="text-2xl font-bold tracking-tight">
-              Welcome to SkyBar Cafe & Lounge!
+              Welcome to Hotel Dastan!
             </h1>
             <p className="text-muted-foreground">
               Your account has been created successfully. Please wait while our administrator assigns you a role.

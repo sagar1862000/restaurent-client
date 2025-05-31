@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "cp public/_redirects dist/ && cp public/_static.json dist/static.json",
-    "render-build": "npm install && npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
     "tsbuild": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

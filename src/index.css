@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Hide scrollbar for category pills */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* React Datepicker Custom Styles */
+.react-datepicker {
+  font-family: inherit !important;
+  border: none !important;
+}
+
+.react-datepicker__header {
+  background-color: white !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding-top: 12px !important;
+}
+
+.react-datepicker__day-name, 
+.react-datepicker__day {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+.react-datepicker__day-name {
+  font-weight: 500 !important;
+  color: #6b7280 !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: rgb(158, 247, 158) !important;
+  border-radius: 50% !important;
+  color: white !important;
+}
+
+.react-datepicker__day:hover {
+  border-radius: 50% !important;
+  background-color: #e5e7eb !important;
+}
+
+.react-datepicker__day--today {
+  font-weight: bold !important;
+  color: #2563eb !important;
+}
+
+.react-datepicker__navigation {
+  top: 12px !important;
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: 80mm auto; /* Standard thermal receipt width (80mm) with auto height */
+  }
+  
+  html, body {
+    width: 80mm;
+    margin: 0;
+    padding: 0;
+    background-color: #fff !important;
+  }
+  
+  body * {
+    visibility: hidden;
+  }
+  
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+  
+  .print\:border-none {
+    border: none !important;
+  }
+  
+  /* Print only the receipt */
+  .react-transform-wrapper {
+    transform: none !important;
+  }
+  
+  .receipt-content,
+  .receipt-content * {
+    visibility: visible;
+    color: black !important;
+  }
+  
+  .receipt-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 12px !important;
+  }
+
+  /* Smaller text for receipt items */
+  .receipt-content table {
+    width: 100%;
+    font-size: 10px !important;
+    table-layout: fixed;
+  }
+  
+  /* Adjust margins and padding for thermal printing */
+  .receipt-content .p-8 {
+    padding: 0.5rem !important;
+  }
+  
+  /* Force black text for better printing */
+  .receipt-content th,
+  .receipt-content td,
+  .receipt-content p,
+  .receipt-content h1,
+  .receipt-content h2,
+  .receipt-content h3,
+  .receipt-content div {
+    color: black !important;
+    font-family: monospace !important;
+  }
+}
+
